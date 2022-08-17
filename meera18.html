@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double click event</title>
+    <style>
+        .division{
+            background-color: rgb(216, 142, 218);
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("div").dblclick(function(){
+            $(this).addClass("division");
+            $("#div1").fadeIn(1000);
+        });
+    });
+</script>
+<body>
+    <h2>Double Click Event</h2>
+    <section>
+        <div>
+        <p>Double click functionality</p>
+        <div id="div1" style="height: 100px; width: 100px; background-color: rgb(39, 51, 105); display: none; margin: 20px;"></div>
+    </div>
+    </section>
+</body>
+</html>
